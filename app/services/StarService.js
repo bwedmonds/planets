@@ -5,11 +5,13 @@ let _schema = new mongoose.Schema({
   name: { type: String, required: true },
   size: { type: Number, required: true },
   earthDistance: { type: Number, required: true },
-  stars: [{ type: ObjectId, ref: 'star' }]
+  age: { type: Number },
+  galaxies: [{ type: ObjectId, ref: 'galaxy' }],
+  planets: [{ type: ObjectId, ref: 'planet' }]
 })
 
-export default class GalaxyService {
+export default class StarService {
   get repository() {
-    return mongoose.model('galaxy', _schema)
+    return mongoose.model('star', _schema)
   }
 }

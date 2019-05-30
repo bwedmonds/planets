@@ -11,10 +11,11 @@ server.use(bp.json())
 
 //  import the route Controller
 import GalaxyController from './controllers/GalaxyController'
+import StarController from './controllers/StarController';
 
 //  register the route
-server.use('/api/users', new GalaxyController().router)
-
+server.use('/api/galaxies', new GalaxyController().router)
+server.use('/api/stars', new StarController().router)
 
 
 //BELOW THIS LINE STAYS THE SAME
