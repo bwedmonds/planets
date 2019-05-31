@@ -1,5 +1,5 @@
 //THIS FILE STAYS BASICALLY THE SAME
-import mongoose, { connect } from 'mongoose'
+import mongoose from 'mongoose'
 
 //THIS STRING WILL CHANGE SLIGHTLY
 const connectionString = "mongodb+srv://bedmonds:mongomongo1!@cluster0-ppdpi.mongodb.net/planets?retryWrites=true"

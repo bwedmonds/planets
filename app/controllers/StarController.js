@@ -1,7 +1,6 @@
 import StarService from "../services/StarService";
 import express from 'express'
-// @ts-ignore
-import PlanetService from "../services/PlanetService"
+// import PlanetService from "../services/PlanetService"
 
 //import service and create an instance
 let _service = new StarService();
